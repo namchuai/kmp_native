@@ -1,14 +1,19 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+KMP Project for audio recording.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+## Running
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+- Currently only support Android. iOS will be added in the future.
+- Just download the APK via Releases and install it on your Android device.
 
+## Installation
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+1. Download Android Studio
+2. Clone this repository and open it in Android Studio
+3. Gradle sync and build the project
+
+## Usage
+
+- App will consist of 3 main screens:
+    1. Home screen: Contains a list of all recordings
+    2. Recording screen: Contains a record button to start recording
+    3. Playback screen: Contains a play button to play the recording
